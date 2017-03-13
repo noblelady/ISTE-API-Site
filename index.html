@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Project 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="js/FullWidthTabs/css/demo.css">
+  <link rel="stylesheet" type="text/css" href="js/FullWidthTabs/css/component.css" />
+  <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/dt/dt-1.10.11/datatables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/t/dt/dt-1.10.11/datatables.min.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <script src="js/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
+  <script src="js/myJS.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <h1 id="header">IST Dept Site</h1>
+  <a id='contact' href="http://ist.rit.edu/api/contactForm/"><h2>Contact Us!</h2></a>
+<div id="tabs" class="tabs">
+  <nav>
+    <ul>
+      <li><a href="#section-1" class="icon-about"><span>About</span></a></li>
+      <li><a href="#section-2" class="icon-degrees"><span>Degrees</span></a></li>
+      <li><a href="#section-3" class="icon-minors"><span>Minors</span></a></li>
+      <li><a href="#section-4" class="icon-employment"><span>Employment</span></a></li>
+      <li><a href="#section-5" class="icon-people"><span>People</span></a></li>
+      <li><a href="#section-6" class="icon-degrees"><span>Research</span></a></li>
+      <li><a href="#section-7" class="icon-contact"><span>Resources</span></a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <section id="section-1">
+      <!-- About -->
+      <div class="mediaboxAA" id="about"></div>
+    </section>
+    <section id="section-2">
+      <!-- Degrees -->
+      <div class="mediabox" id="undergraduate"></div>
+      <div class="mediabox" id="graduate"></div>
+      <div class="mediabox" id="adv-cert"></div>
+    </section>
+    <section id="section-3">
+      <!-- Minors -->
+      <div id="minorsHolding">
+      </div>
+    </section>
+    <section id="section-4">
+      <!-- Employment -->
+      <div class="mediabox" id='intro-e'></div>
+      <div class="mediabox" id="stats"></div>
+      <div class="mediabox" id='intro-ce'></div>
+      <div class="mediaboxAA">
+        <table id="coop-table" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Employer</th>
+                <th>Degree</th>
+                <th>City</th>
+                <th>Term</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+              <th>Employer</th>
+              <th>Degree</th>
+              <th>City</th>
+              <th>Term</th>
+            </tr>
+        </tfoot>
+    </table>
+      </div>
+      <h2 class="rCenter">Coop Map</h2>
+      <iframe id="map" src="http://ist.rit.edu/api/map/" align="middle"></iframe>
+    </section>
+    <section id="section-5">
+      <!-- People -->
+    </section>
+    <section id="section-6">
+      <!-- Research -->
+      <div class="mediaboxAB" id="interest"></div>
+      <div class="mediaboxAB" id="byFaculty"></div>
+    </section>
+    <section id="section-7">
+      <!-- Resources -->
+      <h1 class="rCenter">Student Resources</h1>
+      <h3 class="rCenter">Click on any of the links for a quick access to our resources</h3>
+      <div class="mediaboxAA" id='resources'></div>
+    </section>
+    <div id="footer"></div>
+  </div><!-- /content -->
+</div><!-- /tabs -->
+<script src="js/FullWidthTabs/js/cbpFWTabs.js"></script>
+<script>
+new CBPFWTabs( document.getElementById( 'tabs' ) );
+</script>
+</body>
+</html>
